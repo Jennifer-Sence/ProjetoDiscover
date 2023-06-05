@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Programa Discover da Rocketseat
 
-## 🔖 LayOode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321/DevLinks-%E2%80%A2-Projeto-Discover). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+## 🔖 LayOut visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321/DevLinks-%E2%80%A2-Projeto-Discover). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
