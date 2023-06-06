@@ -28,6 +28,7 @@
 body {
   /*background: color image repeat position /size */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * /* o * apos o body significa que vai aplicar para todos os elemntos dentro do body */ {
@@ -82,7 +83,7 @@ body * /* o * apos o body significa que vai aplicar para todos os elemntos dentr
 
 .light #switch button {
   right: 0;
-  left: initial; 
+  left: initial;
 }
 
 #switch span {
@@ -116,7 +117,9 @@ ul li a {
   border-radius: 8px; /*arrredondamento da borda*/
 
   backdrop-filter: blur(4px); /*blur embaseado*/
-  -webkit-backdrop-filter: blur(4px); /*webkit para funcionar nalgumas versoes do safari*/
+  -webkit-backdrop-filter: blur(
+    4px
+  ); /*webkit para funcionar nalgumas versoes do safari*/
 
   text-decoration: none; /*tira a linha debaixo do texto*/
   font-weight: 500;
@@ -158,4 +161,16 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/*media queries*/
+/*so funciona quando há a linha de eta de viewport no ficheiro html*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
