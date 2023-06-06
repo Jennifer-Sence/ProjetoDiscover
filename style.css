@@ -80,7 +80,7 @@ body * /* o * apos o body significa que vai aplicar para todos os elemntos dentr
   z-index: 1;
   transform: translateY(-50%); /*coloca metade do elemento para cima*/
 
-  animation: slide-in 0.2s;
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
