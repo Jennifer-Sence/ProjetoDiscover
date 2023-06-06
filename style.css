@@ -36,7 +36,8 @@ body * /* o * apos o body significa que vai aplicar para todos os elemntos dentr
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px; /*56 px em top, auto nas laterais e 0 px em bottom*/
   padding: 0 24px;
 }
