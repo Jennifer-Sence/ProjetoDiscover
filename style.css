@@ -1,4 +1,4 @@
-/* Resetar css, todos os elementos deixram de ter margin nem padding do navegador*/
+/* Resetar css, todos os elementos deixaram de ter margin e padding do navegador*/
 * {
   margin: 0;
   padding: 0;
@@ -26,12 +26,11 @@
 }
 
 body {
-  /*background: color image repeat position /size */
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
 
-body * /* o * apos o body significa que vai aplicar para todos os elemntos dentro do body */ {
+body * /* o * apos o body significa que vai aplicar para todos os elementos dentro do body */ {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
@@ -49,9 +48,11 @@ body * /* o * apos o body significa que vai aplicar para todos os elemntos dentr
 }
 
 #profile img {
-  /* display: block;*/
   width: 112px;
-  /* padding: 24px;*/
+  height: 112px;
+  object-fit: cover; 
+  border-radius: 50%;
+
 }
 
 #profile p {
@@ -65,7 +66,7 @@ body * /* o * apos o body significa que vai aplicar para todos os elemntos dentr
   position: relative; /*o absoluto vai ser relativo ao switch*/
   width: 64px;
 
-  margin: 4px auto; /*para centralizar display block*/
+  margin: 4px auto; /*centralizar elemento do tipo display block*/
 }
 
 #switch button {
@@ -114,15 +115,15 @@ ul {
 
 ul li a {
   display: flex;
-  align-items: center; /*alinha em x*/
-  justify-content: center; /*alinha em y*/
+  align-items: center;       /*alinha em x*/
+  justify-content: center;   /*alinha em y*/
   padding: 16px 24px;
 
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px; /*arrredondamento da borda*/
 
-  backdrop-filter: blur(4px); /*blur embaseado*/
+  backdrop-filter: blur(4px); /*blur- embaseado*/
   -webkit-backdrop-filter: blur(
     4px
   ); /*webkit para funcionar nalgumas versoes do safari*/
@@ -162,7 +163,7 @@ ul li a:hover {
   background: var(--highlight-color);
   padding: 16px;
 }
-
+/*-------------Rodape-------------*/
 footer {
   padding: 24px 0;
   text-align: center;
@@ -170,7 +171,7 @@ footer {
 }
 
 /*media queries*/
-/*so funciona quando há a linha de eta de viewport no ficheiro html*/
+/*so funciona quando há a linha de meta de viewport no ficheiro html*/
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
@@ -181,7 +182,7 @@ footer {
   }
 }
 
-/*animation*/
+/*-------------------animation------------*/
 @keyframes slide-in {
   from {
     left: 0;
